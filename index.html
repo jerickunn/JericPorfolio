@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jeric R. Tabirara — AI-Native Full-Stack Developer</title>
+<meta name="description" content="AI-native full-stack developer and project manager. I design, build and ship production systems for real businesses — POS, retail, operations and blockchain platforms.">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jeric R. Tabirara — AI-Native Full-Stack Developer">
+<meta property="og:description" content="Production systems for real businesses. Spec, build, ship.">
+<meta property="og:image" content="./assets/projects/kuyaj/featured.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@800&family=Poppins:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.2.3/dist/lenis.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- the hero's own art: started with the page, not after the three.js module lands -->
+<link rel="preload" as="image" href="./assets/profile/profile.webp" fetchpriority="high">
+<link rel="preload" as="image" href="./assets/projects/kuyaj/card.webp">
+<link rel="preload" as="image" href="./assets/projects/smartbigasan/card.webp">
+<link rel="preload" as="image" href="./assets/projects/aquamanage/card.webp">
+<link rel="preload" as="image" href="./assets/projects/airconhub/card.webp">
+<link rel="preload" as="image" href="./assets/projects/hydra/card.webp">
+<link rel="modulepreload" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.169.0/three.module.min.js" crossorigin>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.169.0/three.module.min.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#work">Skip to work</a>
+
+<!-- ============ INTRO LOADER ============ -->
+<div class="intro-loader" id="loader" aria-hidden="true">
+  <div class="intro-loader-logo">
+    <span class="intro-loader-logo__part intro-loader-logo__part--top">J</span>
+    <span class="intro-loader-logo__part intro-loader-logo__part--bottom">T</span>
+  </div>
+  <span class="intro-transition-dot" aria-hidden="true"></span>
+  <!-- a copy of the character, masked to its own silhouette, revealed through an
+       expanding circle with a red band sweeping across it; it lands exactly over
+       the real one (same projected box) so the hand-off at fade is seamless -->
+  <div class="intro-transition-character">
+    <div class="intro-transition-character-clip">
+      <img class="intro-transition-character-image" src="./assets/profile/profile.webp" alt="">
+      <div class="intro-transition-ring"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="brand-area">
+    <a class="logo-link" href="#top" aria-label="Home">
+      <span class="logo" aria-hidden="true">JT</span>
+    </a>
+    <span class="header-location">
+      <i class="dot" aria-hidden="true"></i>Daet, Camarines Norte
+    </span>
+  </div>
+
+  <nav class="tabs" aria-label="Sections">
+    <span class="tabs-indicator" id="tabsIndicator" aria-hidden="true"></span>
+    <button type="button" class="tab is-active" data-target="#work">Work</button>
+    <button type="button" class="tab" data-target="#about">About</button>
+  </nav>
+
+  <div class="header-contact">
+    <button type="button" class="email-copy" id="emailCopy" data-email="jericvirtualassistant@gmail.com">
+      <span>jericvirtualassistant@gmail.com</span>
+      <span class="email-copy__done" aria-hidden="true">Copied</span>
+    </button>
+    <a class="social-link" href="https://github.com/jerickunn" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.35-1.3-1.71-1.3-1.71-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+    </a>
+    <a class="social-link" href="mailto:jericvirtualassistant@gmail.com?subject=Project%20inquiry" aria-label="Email">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5L12 12.2 19.8 6H4.2ZM20 7.9l-7.4 5.9a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9Z"/></svg>
+    </a>
+  </div>
+</header>
+
+<div class="case-exit-veil" aria-hidden="true"></div>
+
+<!-- back to the gallery, shown while a case is open -->
+<button class="case-back" type="button" aria-label="Back to gallery" aria-hidden="true" tabindex="-1">
+  <svg class="case-back__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H6M12 5l-7 7 7 7"/></svg>
+  <span class="case-back__label">Gallery</span>
+</button>
+
+<!-- sticky hero + stack share one containing block so the hero releases
+     before the footer reveal instead of sticking for the whole document -->
+<div class="page-flow">
+
+<!-- ============ HERO ============ -->
+<section class="work-hero" id="top">
+  <h1 class="u-sr-only">Jeric R. Tabirara — AI-Native Full-Stack Developer</h1>
+  <div class="u-sr-only" aria-label="Profile highlights">
+    <span>AI-Native Full-Stack Developer</span>
+    <span>Spec → Build → Ship</span>
+  </div>
+
+  <!-- shown only when WebGL is unavailable -->
+  <div class="hero-fallback" id="heroFallback" hidden aria-hidden="true">
+    <p class="hero-fallback-title">AI-Native <span>Apps</span></p>
+    <p class="hero-fallback-tags"><span>AI-Native Full-Stack Developer</span><span>Spec → Build → Ship</span></p>
+  </div>
+
+  <div class="screen-wheel" id="screenWheel">
+    <div class="carousel-stage" id="carouselStage">
+      <canvas class="carousel-canvas" id="carouselCanvas" aria-label="Rotating 3D project carousel"></canvas>
+      <img class="hero-character" id="heroCharacter" src="./assets/profile/profile.webp" alt="" aria-hidden="true" fetchpriority="high" decoding="sync">
+    </div>
+    <div class="wheel-lens-blur wheel-lens-blur--left" aria-hidden="true"></div>
+    <div class="wheel-lens-blur wheel-lens-blur--right" aria-hidden="true"></div>
+  </div>
+
+  <!-- narrow screens: the taglines run as a marquee under the wheel, driven by the ring -->
+  <div class="hero-marquee" aria-hidden="true">
+    <div class="hero-marquee__track">
+      <span class="hero-marquee__copy">AI-NATIVE FULL-STACK DEVELOPER · SPEC → BUILD → SHIP · AI-NATIVE FULL-STACK DEVELOPER · SPEC → BUILD → SHIP · </span><span class="hero-marquee__copy">AI-NATIVE FULL-STACK DEVELOPER · SPEC → BUILD → SHIP · AI-NATIVE FULL-STACK DEVELOPER · SPEC → BUILD → SHIP · </span>
+    </div>
+  </div>
+
+  <a class="explore-cue" href="#work">
+    <span>Explore</span>
+    <span aria-hidden="true">↓</span>
+  </a>
+</section>
+
+<!-- ============ CASE STACK ============ -->
+<!-- Each case is the reference's framed card: a double frame with edge ticks,
+     the case number in the outer gutter, the 3D device (js/case-devices.js)
+     flying in behind the centred title / tags / button. -->
+<div class="case-stack" id="work">
+
+  <section class="case-section" data-case="01" data-slug="kuya-js-pos" data-layout="tablet" data-entrance="rise" data-shot="./assets/projects/kuyaj/device.webp" aria-label="Case 01: Kuya J's POS">
+    <div class="case-frame">
+      <span class="case-number" aria-hidden="true">case 01</span>
+      <div class="case-device" aria-hidden="true"><div class="case-device__box"><canvas class="case-device__canvas"></canvas></div></div>
+      <div class="case-frame__safe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="case-cover">
+        <div class="case-cover__content">
+          <h2 class="case-title case-title--impact">Kuya J's POS</h2>
+          <p class="case-tags"><span>#POS</span><span>#REALTIME</span><span>#RBAC</span></p>
+          <button type="button" class="case-button" data-open="kuya-js-pos">Deep dive</button>
+        </div>
+      </div>
+    </div>
+    <div class="case-page-body" aria-label="Kuya J's POS case study">
+      <div class="case-meta-grid">
+        <div class="case-meta-cell"><span class="case-meta-label">Platform</span><span class="case-meta-value">Web · Cloud POS</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Role</span><span class="case-meta-value">Project Manager &amp; System Architect, 2025 to 2026</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Stack</span><span class="case-meta-value">React 18 · Node.js / Express.js · MongoDB Atlas · REST API · JWT</span></div>
+      </div>
+      <p class="case-page-text"><span class="rp-line" style="--rp-i:0"><span class="rp-highlight rp-highlight--named">Kuya J's Inasal</span> — a cloud-native point-of-sale for a Daet restaurant that syncs sales and inventory in real time. I led a 7-member team as project manager and system architect, designed the IEEE 1016 architecture and made every stack decision.</span></p>
+    </div>
+    <div class="case-story">
+      <div class="case-story__row case-story__row--right case-story__row--screens">
+        <p class="case-story__text"><span class="case-story__kicker case-story__kicker--red" style="--rp-i:0">100% of it ran on paper</span><span class="rp-line" style="--rp-i:1">Orders, stock and sales lived on manual paper processes.</span><span class="rp-line" style="--rp-i:2">Nothing was in sync, and every report had to be rebuilt by hand.</span></p>
+        <div class="case-story__media case-story__media--screens" aria-hidden="true"><div class="case-screens"><div class="case-screens__stack"><span class="case-screens__card" style="--i:0"><img class="case-screens__shot" src="./assets/projects/kuyaj/featured.jpg" alt="" loading="lazy"></span></div><div class="case-screens__cue case-screens__cue--red"><span class="case-screens__line"></span><span class="case-screens__pill">Manual paper processes</span></div></div></div>
+      </div>
+      <div class="case-story__row case-story__row--left case-story__row--points case-story__row--reel">
+        <div class="case-story__text case-story__text--points"><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:0">Menu, inventory, sales, voided orders, audit logs</span><span class="rp-line" style="--rp-i:1">Built the full operating set behind one system: menu and inventory management, sales reporting, voided-order handling and audit logging.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:2">3-tier RBAC behind JWT auth</span><span class="rp-line" style="--rp-i:3">Cashier, manager and admin views are separated by role, with JWT authentication on every request.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:4">UAT with live client staff</span><span class="rp-line" style="--rp-i:5">Coordinated user acceptance testing with the restaurant's own staff, meeting every ISO/IEC 25010 criterion before go-live.</span></p></div>
+        <div class="case-story__media case-story__media--reel" aria-hidden="true"><div class="case-reel"><div class="case-reel__stage"><div class="case-reel__card" data-pos="0"><img src="./assets/projects/kuyaj/menu.jpg" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="1"><img src="./assets/projects/kuyaj/inventory.jpg" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="2"><img src="./assets/projects/kuyaj/sales-report.jpg" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="3"><img src="./assets/projects/kuyaj/voided-orders.jpg" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="4"><img src="./assets/projects/kuyaj/audit-logs.jpg" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="5"><img src="./assets/projects/kuyaj/user-management.jpg" alt="" loading="lazy"></div></div></div></div>
+      </div><div class="case-stats"><div class="case-stats__cell"><div class="case-stats__figure"><span class="case-stats__value" data-stat-value="25%">25%</span></div><p class="case-stats__label"><span class="rp-line" style="--rp-i:0">Faster order processing</span></p></div><div class="case-stats__cell"><div class="case-stats__figure"><span class="case-stats__value" data-stat-value="100%">100%</span></div><p class="case-stats__label"><span class="rp-line" style="--rp-i:0">Stock accuracy</span></p></div><div class="case-stats__cell"><div class="case-stats__figure"><span class="case-stats__value" data-stat-value="7">7</span></div><p class="case-stats__label"><span class="rp-line" style="--rp-i:0">Member team led</span></p></div></div><div class="case-story__coda"><p class="case-story__text"><span class="rp-line" style="--rp-i:0">At go-live the system replaced 100% of the manual paper processes.</span><span class="rp-line" style="--rp-i:1">I owned the architecture, the code review and the QA, and led the team from requirements through deployment.</span></p></div></div>
+    <aside class="case-next" aria-label="More cases"><div class="case-next__slot"><div class="case-next__strip" style="--i:0"><span class="case-next__no">case 02</span><span class="case-next__title case-next__title--editorial">SmartBigasan</span><button type="button" class="case-button" data-open="smartbigasan">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:1"><span class="case-next__no">case 03</span><span class="case-next__title case-next__title--poppins">AquaManage</span><button type="button" class="case-button" data-open="aquamanage">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:2"><span class="case-next__no">case 04</span><span class="case-next__title case-next__title--impact">AirconHub</span><button type="button" class="case-button" data-open="airconhub">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:3"><span class="case-next__no">case 05</span><span class="case-next__title case-next__title--editorial">Hydra</span><button type="button" class="case-button" data-open="hydra">Deep dive</button></div></div></aside>
+  </section>
+
+  <section class="case-section" data-case="02" data-slug="smartbigasan" data-layout="phone-right" data-shot="./assets/projects/smartbigasan/device.webp" aria-label="Case 02: SmartBigasan">
+    <div class="case-frame">
+      <span class="case-number" aria-hidden="true">case 02</span>
+      <div class="case-device" aria-hidden="true"><div class="case-device__box"><canvas class="case-device__canvas"></canvas></div></div>
+      <div class="case-frame__safe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="case-cover">
+        <div class="case-cover__content">
+          <h2 class="case-title case-title--editorial">SmartBigasan</h2>
+          <p class="case-tags"><span>#AGRITECH</span><span>#GCASH</span><span>#IOS/ANDROID</span></p>
+          <button type="button" class="case-button" data-open="smartbigasan">Deep dive</button>
+        </div>
+      </div>
+    </div>
+    <div class="case-page-body" aria-label="SmartBigasan case study">
+      <div class="case-meta-grid">
+        <div class="case-meta-cell"><span class="case-meta-label">Platform</span><span class="case-meta-value">Web · iOS / Android</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Role</span><span class="case-meta-value">Lead Developer &amp; System Architect, 2025</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Stack</span><span class="case-meta-value">React.js · Laravel / PHP · MySQL · PayMongo (GCash) · Leaflet.js · Chart.js · JWT</span></div>
+      </div>
+      <p class="case-page-text"><span class="rp-line" style="--rp-i:0"><span class="rp-highlight rp-highlight--named">SmartBigasan</span> — a rice-retail platform for Philippine bigasan micro-retailers: per-kilo and per-sack online ordering, GCash payments and pin-based delivery tracking, with a profit engine underneath.</span></p>
+    </div>
+    <div class="case-story">
+      <div class="case-story__row case-story__row--right case-story__row--screens">
+        <p class="case-story__text"><span class="case-story__kicker case-story__kicker--red" style="--rp-i:0">Bookkeeping lived in a notebook</span><span class="rp-line" style="--rp-i:1">Orders, deliveries and margins were tracked by hand.</span><span class="rp-line" style="--rp-i:2">Owners could see sales, but not what they actually earned.</span></p>
+        <div class="case-story__media case-story__media--screens" aria-hidden="true"><div class="case-screens"><div class="case-screens__stack"><span class="case-screens__card" style="--i:0"><img class="case-screens__shot" src="./assets/projects/smartbigasan/1.png" alt="" loading="lazy"></span></div><div class="case-screens__cue case-screens__cue--red"><span class="case-screens__line"></span><span class="case-screens__pill">Notebook bookkeeping</span></div></div></div>
+      </div>
+      <div class="case-story__row case-story__row--left case-story__row--points case-story__row--reel">
+        <div class="case-story__text case-story__text--points"><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:0">Per-kilo and per-sack ordering</span><span class="rp-line" style="--rp-i:1">Customers order online by the kilo or the sack, and pay with GCash through PayMongo.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:2">Pin-based delivery tracking</span><span class="rp-line" style="--rp-i:3">Every delivery is a pin on an interactive Leaflet map, from dispatch to the customer's door.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:4">A gross-to-net profit engine</span><span class="rp-line" style="--rp-i:5">COGS-based computation, Chart.js dashboards and low-stock alerts turn the notebook into role-based business intelligence.</span></p></div>
+        <div class="case-story__media case-story__media--reel" aria-hidden="true"><div class="case-reel" data-portrait><div class="case-reel__stage"><div class="case-reel__card" data-pos="0"><img src="./assets/projects/smartbigasan/2.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="1"><img src="./assets/projects/smartbigasan/3.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="2"><img src="./assets/projects/smartbigasan/4.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="3"><img src="./assets/projects/smartbigasan/5.png" alt="" loading="lazy"></div></div></div></div>
+      </div><div class="case-story__coda"><p class="case-story__text"><span class="rp-line" style="--rp-i:0">I architected the full stack and led the build: the ordering flow, the payments, the map tracking and the analytics that replaced notebook bookkeeping.</span></p></div></div>
+    <aside class="case-next" aria-label="More cases"><div class="case-next__slot"><div class="case-next__strip" style="--i:0"><span class="case-next__no">case 01</span><span class="case-next__title case-next__title--impact">Kuya J's POS</span><button type="button" class="case-button" data-open="kuya-js-pos">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:1"><span class="case-next__no">case 03</span><span class="case-next__title case-next__title--poppins">AquaManage</span><button type="button" class="case-button" data-open="aquamanage">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:2"><span class="case-next__no">case 04</span><span class="case-next__title case-next__title--impact">AirconHub</span><button type="button" class="case-button" data-open="airconhub">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:3"><span class="case-next__no">case 05</span><span class="case-next__title case-next__title--editorial">Hydra</span><button type="button" class="case-button" data-open="hydra">Deep dive</button></div></div></aside>
+  </section>
+
+  <section class="case-section" data-case="03" data-slug="aquamanage" data-layout="tablet" data-entrance="slide-left" data-shot="./assets/projects/aquamanage/device.webp" aria-label="Case 03: AquaManage">
+    <div class="case-frame">
+      <span class="case-number" aria-hidden="true">case 03</span>
+      <div class="case-device" aria-hidden="true"><div class="case-device__box"><canvas class="case-device__canvas"></canvas></div></div>
+      <div class="case-frame__safe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="case-cover">
+        <div class="case-cover__content">
+          <h2 class="case-title case-title--poppins">AquaManage</h2>
+          <p class="case-tags"><span>#OPERATIONS</span><span>#ANALYTICS</span></p>
+          <button type="button" class="case-button" data-open="aquamanage">Deep dive</button>
+        </div>
+      </div>
+    </div>
+    <div class="case-page-body" aria-label="AquaManage case study">
+      <div class="case-meta-grid">
+        <div class="case-meta-cell"><span class="case-meta-label">Platform</span><span class="case-meta-value">Web</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Role</span><span class="case-meta-value">Full-Stack Developer, 2025</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Stack</span><span class="case-meta-value">React.js · Node.js / Express.js · MongoDB Atlas</span></div>
+      </div>
+      <p class="case-page-text"><span class="rp-line" style="--rp-i:0"><span class="rp-highlight rp-highlight--named">AquaManage</span> — a six-module operations platform for a water refilling station, covering everything from gallon monitoring to analytics in one dashboard.</span></p>
+    </div>
+    <div class="case-story">
+      <div class="case-story__row case-story__row--right case-story__row--screens">
+        <p class="case-story__text"><span class="case-story__kicker case-story__kicker--red" style="--rp-i:0">Paper logs across the entire station</span><span class="rp-line" style="--rp-i:1">Gallons, deliveries, attendance, costs and complaints were all logged on paper, in different places, by different people.</span></p>
+        <div class="case-story__media case-story__media--screens" aria-hidden="true"><div class="case-screens"><div class="case-screens__stack"><span class="case-screens__card" style="--i:0"><img class="case-screens__shot" src="./assets/projects/aquamanage/1.png" alt="" loading="lazy"></span></div><div class="case-screens__cue case-screens__cue--red"><span class="case-screens__line"></span><span class="case-screens__pill">Paper logs</span></div></div></div>
+      </div>
+      <div class="case-story__row case-story__row--left case-story__row--points case-story__row--reel">
+        <div class="case-story__text case-story__text--points"><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:0">Gallon monitoring and returns</span><span class="rp-line" style="--rp-i:1">Every gallon out and every gallon back is tracked, so the station always knows its stock.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:2">Recurring delivery reminders and attendance</span><span class="rp-line" style="--rp-i:3">Deliveries repeat on schedule and employee attendance is recorded in the same system.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:4">Costing, complaints and analytics</span><span class="rp-line" style="--rp-i:5">Costing records, complaint handling and analytics complete the six modules that replaced the paper logs.</span></p></div>
+        <div class="case-story__media case-story__media--reel" aria-hidden="true"><div class="case-reel"><div class="case-reel__stage"><div class="case-reel__card" data-pos="0"><img src="./assets/projects/aquamanage/2.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="1"><img src="./assets/projects/aquamanage/3.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="2"><img src="./assets/projects/aquamanage/4.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="3"><img src="./assets/projects/aquamanage/5.png" alt="" loading="lazy"></div></div></div></div>
+      </div><div class="case-stats"><div class="case-stats__cell"><div class="case-stats__figure"><span class="case-stats__value" data-stat-value="6">6</span></div><p class="case-stats__label"><span class="rp-line" style="--rp-i:0">Modules delivered</span></p></div><div class="case-stats__cell"><div class="case-stats__figure"><span class="case-stats__value" data-stat-value="100%">100%</span></div><p class="case-stats__label"><span class="rp-line" style="--rp-i:0">Paper logs replaced</span></p></div></div><div class="case-story__coda"><p class="case-story__text"><span class="rp-line" style="--rp-i:0">I delivered the platform end to end as the full-stack developer: data model, API and every one of the six modules.</span></p></div></div>
+    <aside class="case-next" aria-label="More cases"><div class="case-next__slot"><div class="case-next__strip" style="--i:0"><span class="case-next__no">case 01</span><span class="case-next__title case-next__title--impact">Kuya J's POS</span><button type="button" class="case-button" data-open="kuya-js-pos">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:1"><span class="case-next__no">case 02</span><span class="case-next__title case-next__title--editorial">SmartBigasan</span><button type="button" class="case-button" data-open="smartbigasan">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:2"><span class="case-next__no">case 04</span><span class="case-next__title case-next__title--impact">AirconHub</span><button type="button" class="case-button" data-open="airconhub">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:3"><span class="case-next__no">case 05</span><span class="case-next__title case-next__title--editorial">Hydra</span><button type="button" class="case-button" data-open="hydra">Deep dive</button></div></div></aside>
+  </section>
+
+  <section class="case-section" data-case="04" data-slug="airconhub" data-layout="tablet" data-entrance="slide-right" data-shot="./assets/projects/airconhub/device.webp" aria-label="Case 04: AirconHub">
+    <div class="case-frame">
+      <span class="case-number" aria-hidden="true">case 04</span>
+      <div class="case-device" aria-hidden="true"><div class="case-device__box"><canvas class="case-device__canvas"></canvas></div></div>
+      <div class="case-frame__safe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="case-cover">
+        <div class="case-cover__content">
+          <h2 class="case-title case-title--impact">AirconHub</h2>
+          <p class="case-tags"><span>#HVAC</span><span>#DISPATCH</span><span>#BOOKING</span></p>
+          <button type="button" class="case-button" data-open="airconhub">Deep dive</button>
+        </div>
+      </div>
+    </div>
+    <div class="case-page-body" aria-label="AirconHub case study">
+      <div class="case-meta-grid">
+        <div class="case-meta-cell"><span class="case-meta-label">Platform</span><span class="case-meta-value">Web</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Role</span><span class="case-meta-value">Full-Stack Developer, 2025</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Stack</span><span class="case-meta-value">React.js · Node.js / Express.js · MySQL · REST API</span></div>
+      </div>
+      <p class="case-page-text"><span class="rp-line" style="--rp-i:0"><span class="rp-highlight rp-highlight--named">AirconHub</span> — a booking and dispatch dashboard for an HVAC provider: technician assignment, appointment scheduling, client service history and real-time team performance.</span></p>
+    </div>
+    <div class="case-story">
+      <div class="case-story__row case-story__row--right case-story__row--screens">
+        <p class="case-story__text"><span class="case-story__kicker case-story__kicker--red" style="--rp-i:0">Double-booked schedules</span><span class="rp-line" style="--rp-i:1">Technicians were assigned by hand, so the same slot could be booked twice and invoicing dragged behind the work.</span></p>
+        <div class="case-story__media case-story__media--screens" aria-hidden="true"><div class="case-screens"><div class="case-screens__stack"><span class="case-screens__card" style="--i:0"><img class="case-screens__shot" src="./assets/projects/airconhub/1.png" alt="" loading="lazy"></span></div><div class="case-screens__cue case-screens__cue--red"><span class="case-screens__line"></span><span class="case-screens__pill">Double bookings</span></div></div></div>
+      </div>
+      <div class="case-story__row case-story__row--left case-story__row--points case-story__row--reel">
+        <div class="case-story__text case-story__text--points"><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:0">Technician assignment and scheduling</span><span class="rp-line" style="--rp-i:1">Appointments are scheduled against technician availability, which eliminated double-booked schedules.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:2">Client service history</span><span class="rp-line" style="--rp-i:3">Every client's service record is one click away, so a return visit starts with context.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:4">Real-time team performance</span><span class="rp-line" style="--rp-i:5">A live view of the team's work streamlined invoicing and made performance visible as it happened.</span></p></div>
+        <div class="case-story__media case-story__media--reel" aria-hidden="true"><div class="case-reel"><div class="case-reel__stage"><div class="case-reel__card" data-pos="0"><img src="./assets/projects/airconhub/2.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="1"><img src="./assets/projects/airconhub/3.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="2"><img src="./assets/projects/airconhub/4.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="3"><img src="./assets/projects/airconhub/5.png" alt="" loading="lazy"></div></div></div></div>
+      </div><div class="case-stats"><div class="case-stats__cell"><div class="case-stats__figure"><span class="case-stats__value" data-stat-value="0">0</span></div><p class="case-stats__label"><span class="rp-line" style="--rp-i:0">Double-booked schedules</span></p></div></div><div class="case-story__coda"><p class="case-story__text"><span class="rp-line" style="--rp-i:0">Built end to end as the full-stack developer: the REST API on Node.js and MySQL, and the React dashboard the dispatch team runs on.</span></p></div></div>
+    <aside class="case-next" aria-label="More cases"><div class="case-next__slot"><div class="case-next__strip" style="--i:0"><span class="case-next__no">case 01</span><span class="case-next__title case-next__title--impact">Kuya J's POS</span><button type="button" class="case-button" data-open="kuya-js-pos">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:1"><span class="case-next__no">case 02</span><span class="case-next__title case-next__title--editorial">SmartBigasan</span><button type="button" class="case-button" data-open="smartbigasan">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:2"><span class="case-next__no">case 03</span><span class="case-next__title case-next__title--poppins">AquaManage</span><button type="button" class="case-button" data-open="aquamanage">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:3"><span class="case-next__no">case 05</span><span class="case-next__title case-next__title--editorial">Hydra</span><button type="button" class="case-button" data-open="hydra">Deep dive</button></div></div></aside>
+  </section>
+
+  <section class="case-section" data-case="05" data-slug="hydra" data-layout="tablet" data-entrance="drop" data-shot="./assets/projects/hydra/device.webp" aria-label="Case 05: Hydra">
+    <div class="case-frame">
+      <span class="case-number" aria-hidden="true">case 05</span>
+      <div class="case-device" aria-hidden="true"><div class="case-device__box"><canvas class="case-device__canvas"></canvas></div></div>
+      <div class="case-frame__safe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="case-cover">
+        <div class="case-cover__content">
+          <h2 class="case-title case-title--editorial">Hydra</h2>
+          <p class="case-tags"><span>#BLOCKCHAIN</span><span>#SOLIDITY</span><span>#FINTECH</span></p>
+          <button type="button" class="case-button" data-open="hydra">Deep dive</button>
+        </div>
+      </div>
+    </div>
+    <div class="case-page-body" aria-label="Hydra case study">
+      <div class="case-meta-grid">
+        <div class="case-meta-cell"><span class="case-meta-label">Platform</span><span class="case-meta-value">Web · Web3</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Role</span><span class="case-meta-value">Full-Stack &amp; Smart Contract Developer, 2025</span></div>
+        <div class="case-meta-cell"><span class="case-meta-label">Stack</span><span class="case-meta-value">React.js · Node.js · Solidity · Web3 · MySQL</span></div>
+      </div>
+      <p class="case-page-text"><span class="rp-line" style="--rp-i:0"><span class="rp-highlight rp-highlight--named">HYDRA</span> — a decentralized budgeting system for the Mabini Colleges Computer Science Department, built on Solidity smart contracts so every peso allocated is immutable and traceable.</span></p>
+    </div>
+    <div class="case-story">
+      <div class="case-story__row case-story__row--right case-story__row--screens">
+        <p class="case-story__text"><span class="case-story__kicker case-story__kicker--red" style="--rp-i:0">Fund allocation nobody could audit</span><span class="rp-line" style="--rp-i:1">Budget allocation ran on administrative overhead, and the department had no way to verify where the money went.</span></p>
+        <div class="case-story__media case-story__media--screens" aria-hidden="true"><div class="case-screens"><div class="case-screens__stack"><span class="case-screens__card" style="--i:0"><img class="case-screens__shot" src="./assets/projects/hydra/dashboard.png" alt="" loading="lazy"></span></div><div class="case-screens__cue case-screens__cue--red"><span class="case-screens__line"></span><span class="case-screens__pill">No audit trail</span></div></div></div>
+      </div>
+      <div class="case-story__row case-story__row--left case-story__row--points case-story__row--reel">
+        <div class="case-story__text case-story__text--points"><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:0">Solidity smart contracts for allocation</span><span class="rp-line" style="--rp-i:1">Allocations are written to smart contracts, so once a peso is assigned the record cannot be changed.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:2">Every peso traceable on-chain</span><span class="rp-line" style="--rp-i:3">Transactions are readable by anyone in the department, in real time, without going through an office.</span></p><p class="case-story__point"><span class="case-story__kicker" style="--rp-i:4">Auditable by the whole department</span><span class="rp-line" style="--rp-i:5">100% allocation transparency, and 40% less administrative overhead in running the budget.</span></p></div>
+        <div class="case-story__media case-story__media--reel" aria-hidden="true"><div class="case-reel"><div class="case-reel__stage"><div class="case-reel__card" data-pos="0"><img src="./assets/projects/hydra/transactions.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="1"><img src="./assets/projects/hydra/dashboard-2.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="2"><img src="./assets/projects/hydra/dashboard-3.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="3"><img src="./assets/projects/hydra/dashboard-4.png" alt="" loading="lazy"></div><div class="case-reel__card" data-pos="4"><img src="./assets/projects/hydra/dashboard-5.png" alt="" loading="lazy"></div></div></div></div>
+      </div><div class="case-stats"><div class="case-stats__cell"><div class="case-stats__figure"><span class="case-stats__value" data-stat-value="100%">100%</span></div><p class="case-stats__label"><span class="rp-line" style="--rp-i:0">Allocation transparency</span></p></div><div class="case-stats__cell"><div class="case-stats__figure"><span class="case-stats__value" data-stat-value="40%">40%</span></div><p class="case-stats__label"><span class="rp-line" style="--rp-i:0">Less admin overhead</span></p></div></div><div class="case-story__coda"><p class="case-story__text"><span class="rp-line" style="--rp-i:0">I built the smart contracts, the Web3 integration and the React front end: a personal project that became the department's budgeting system.</span></p></div></div>
+    <aside class="case-next" aria-label="More cases"><div class="case-next__slot"><div class="case-next__strip" style="--i:0"><span class="case-next__no">case 01</span><span class="case-next__title case-next__title--impact">Kuya J's POS</span><button type="button" class="case-button" data-open="kuya-js-pos">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:1"><span class="case-next__no">case 02</span><span class="case-next__title case-next__title--editorial">SmartBigasan</span><button type="button" class="case-button" data-open="smartbigasan">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:2"><span class="case-next__no">case 03</span><span class="case-next__title case-next__title--poppins">AquaManage</span><button type="button" class="case-button" data-open="aquamanage">Deep dive</button></div></div><div class="case-next__slot"><div class="case-next__strip" style="--i:3"><span class="case-next__no">case 04</span><span class="case-next__title case-next__title--impact">AirconHub</span><button type="button" class="case-button" data-open="airconhub">Deep dive</button></div></div></aside>
+  </section>
+
+</div>
+
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="services__inner">
+    <p class="case-label">What I can offer</p>
+    <ul class="services__list" role="list">
+      <li class="services__row">
+        <span class="services__no">[ 01 ]</span>
+        <div class="services__body">
+          <h3 class="services__title">Full-Stack Web Development</h3>
+          <p>React on the front, Node/Express, Laravel or FastAPI behind it, and a data model designed to survive real usage. Clean code, real auth, and a system the client's staff can run on day one.</p>
+        </div>
+      </li>
+      <li class="services__row">
+        <span class="services__no">[ 02 ]</span>
+        <div class="services__body">
+          <h3 class="services__title">UI/UX &amp; Operations Dashboards</h3>
+          <p>Interfaces for people doing a job under pressure — cashiers, delivery staff, station owners. Role-based views, clear hierarchy, and analytics that answer where the money is going.</p>
+        </div>
+      </li>
+      <li class="services__row">
+        <span class="services__no">[ 03 ]</span>
+        <div class="services__body">
+          <h3 class="services__title">API &amp; Payment Integrations</h3>
+          <p>GCash through PayMongo, Stripe Connect, Leaflet and OpenStreetMap, Web3 contract calls. REST APIs with JWT auth, built so the next developer can extend them without a rewrite.</p>
+        </div>
+      </li>
+      <li class="services__row">
+        <span class="services__no">[ 04 ]</span>
+        <div class="services__body">
+          <h3 class="services__title">AI-Native Delivery</h3>
+          <p>I work LLM-first — pairing with Claude Code and spec-driven workflows to move from requirements to a deployed system fast. The velocity is the tooling; architecture, review and QA stay mine.</p>
+        </div>
+      </li>
+      <li class="services__row">
+        <span class="services__no">[ 05 ]</span>
+        <div class="services__body">
+          <h3 class="services__title">Deployment &amp; Support</h3>
+          <p>Railway, Render, Hostinger VPS, GitHub Actions. I run UAT with the client's own staff, train the team, and stay reachable after go-live — because a launch nobody can operate isn't a launch.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about__inner">
+    <p class="case-label">About</p>
+    <h2 class="about__lead">I build systems that replace the paperwork a business is drowning in.</h2>
+    <p class="about__body">
+      AI-native full-stack developer based in Daet, Camarines Norte. I work LLM-first — pairing with Claude Code
+      and spec-driven workflows to go from requirements to a deployed system fast — but I own the architecture,
+      the code review and the QA myself. I've led a 7-person team as project manager and system architect, run
+      UAT with live client staff, and replaced paper processes at go-live for four real businesses.
+    </p>
+    <dl class="about__facts">
+      <div><dt>Education</dt><dd>BS Computer Science<span>Mabini Colleges, 2025</span></dd></div>
+      <div><dt>Systems shipped</dt><dd>5<span>4 client businesses</span></dd></div>
+      <div><dt>Largest team led</dt><dd>7<span>As PM &amp; architect</span></dd></div>
+      <div><dt>Based in</dt><dd>Daet<span>Available remotely</span></dd></div>
+    </dl>
+    <dl class="about__stack">
+      <div><dt>Frontend</dt><dd>React · React Native · Vite · Tailwind · Chart.js · Leaflet</dd></div>
+      <div><dt>Backend</dt><dd>Node/Express · Laravel · FastAPI · REST · JWT</dd></div>
+      <div><dt>Data</dt><dd>PostgreSQL · MySQL · MongoDB Atlas · SQLite</dd></div>
+      <div><dt>Web3 &amp; ops</dt><dd>Solidity · Web3.js · GitHub Actions · Railway · Render</dd></div>
+    </dl>
+  </div>
+</section>
+
+</div><!-- /.page-flow -->
+
+<!-- ============ FOOTER REVEAL ============ -->
+<div class="footer-reveal" aria-hidden="true"></div>
+
+<footer class="site-footer">
+  <div class="site-footer__contact">
+    <a class="site-footer__email" href="mailto:jericvirtualassistant@gmail.com?subject=Project%20inquiry">jericvirtualassistant@gmail.com</a>
+    <a class="social-link" href="https://github.com/jerickunn" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.35-1.3-1.71-1.3-1.71-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+    </a>
+    <a class="social-link" href="tel:+639205831809" aria-label="Phone">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1l-2.22 2.2Z"/></svg>
+    </a>
+  </div>
+  <div class="site-footer__mark" aria-hidden="true">JT</div>
+  <p class="site-footer__year"><span id="year">2026</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.2.3/dist/lenis.min.js"></script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
